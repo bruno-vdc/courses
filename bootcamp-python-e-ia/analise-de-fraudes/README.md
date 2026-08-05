@@ -153,7 +153,7 @@ Cada uma dessas abordagens exigiria um novo treinamento e uma nova avaliação d
 ## Estrutura do repositório
 
 ```
-analise_fraudes/
+analise-de-fraudes/
 │
 ├── imagens/
 │   ├── distribuicao_classes.png
