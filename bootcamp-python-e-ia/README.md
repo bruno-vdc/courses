@@ -1,4 +1,4 @@
-# Accenture - Python para Analise e Automacao de Dados
+# Accenture - Python para Análise e Automação de Dados
 
 Repositório criado para a entrega dos 3 projetos desse Bootcamp da DIO.
 Os projetos são:
