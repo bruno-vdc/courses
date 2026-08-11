@@ -58,7 +58,9 @@ As fontes indicam que a escolha entre esses investimentos deve levar em conta o 
 
 Em todos os parágrafos, fontes foram citadas para mostrar de qual fonte a informação foi retirada. Como exemplo disso, segue um print do parágrafo sobre renda fixa:
 
-<img width="1278" height="860" alt="image" src="https://github.com/user-attachments/assets/d2320c45-d473-4354-a846-8409b069a220" />
+<p align="center">
+<img src="imagens/resposta_1.png" width="600">
+</p>
 
 ##### Pergunta 2
 
