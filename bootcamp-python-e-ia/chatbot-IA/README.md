@@ -27,6 +27,13 @@
 │   ├── historico_atendimento.csv  #interações anteriores
 │   └── produtos_financeiros.json  #produtos disponíveis
 │
+├── imagens/                       #prints dos testes feitos
+│   ├── prova_funcionamento.png    #perfil do cliente
+│   ├── perguntas_1_2.png          #primeiras perguntas feitas
+│   ├── perguntas_3.png            #terceira pergunta feita
+│   ├── perguntas_4.png            #quarta pergunta feita
+│   └── perguntas_5.png            #quinta pergunta feita
+│
 └── src/
     └── app.py                     #aplicação do Streamlit
 ```
@@ -91,7 +98,9 @@ streamlit run app.py
 
   Ao rodar esse segundo código, a janela do navegador com o chat será aberta, com o usuário podendo começar a perguntar.
 
-  <img width="1665" height="997" alt="image" src="https://github.com/user-attachments/assets/f13ec3c1-e34b-48c6-8d9d-23801de52b6c" />
+  <p align="center">
+  <img src="imagens/prova_funcionamento.png" width="700">
+  </p>
   
   `prova de funcionamento do chat`
 
