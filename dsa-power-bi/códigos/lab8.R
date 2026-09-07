@@ -13,7 +13,7 @@ library(ggplot2)
 library(readr)
 
 #carregando os dados
-dados_historicos_dsa <- read_csv("C:/Users/bruno/Documents/OneDrive/cursos e estudos/cursos online de extensão/power bi/Microsoft Power BI Para Business Intelligence e Data Science/17 - machine learning e power bi para detecção de anomalias/prática/dados_historicos.csv")
+dados_historicos_dsa <- read_csv("dados_historicos.csv")
 View(dados_historicos_dsa)
 
 #criando o modelo de isolationforest
@@ -51,7 +51,7 @@ ggplot() +
              alpha = 0.8)
 
 #carregando os novos dados
-novos_dados_dsa <-read_csv("C:/Users/bruno/Documents/OneDrive/cursos e estudos/cursos online de extensão/power bi/Microsoft Power BI Para Business Intelligence e Data Science/17 - machine learning e power bi para detecção de anomalias/prática/novos_dados.csv")
+novos_dados_dsa <-read_csv("novos_dados.csv")
 View(novos_dados_dsa)
 
 #previsões com os novos dados
