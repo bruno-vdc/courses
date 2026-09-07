@@ -1,10 +1,9 @@
-# **WORK IN PROGRESS**
 # **Microsoft Power BI Para Business Intelligence e Data Science - DSA**
 
 Diretório criado para publicação dos dashboards criados durante esse curso da Data Science Academy.  
 Cada relatório possui dados e perguntas diferentes. Por conta disso, diferentes visualizações e recursos do Power BI foram usados para cada criação. 
-As bases de dados foram disponibilizadas pela DSA, possuem dados fictícios e podem ser acessadas pelos próprios arquivos.  
-Cada projeto será brevemente explicado adiante, com seu próprio modelo de dados ou, quando houver apenas uma tabela, suas 5 primeiras linhas para exemplificação do conteúdo, sempre com as alterações feitas durante o projeto. Um print de cada relatório será anexado, todos disponíveis em `imagens`.
+As bases de dados foram disponibilizadas pela DSA, possuem dados fictícios e podem ser acessadas pelos próprios arquivos. A intenção desse diretório é a publicação dos relatórios para mostrar o que o curso ensinou, não a reprodutibilidade, por isso os dados usados não serão publicados, apenas os painéis e códigos desenvolvidos.  
+Cada projeto será brevemente explicado adiante, com seu próprio modelo de dados ou, quando houver apenas uma tabela, suas 5 primeiras linhas para exemplificação do conteúdo, sempre com as alterações feitas durante o projeto. Um print de cada relatório será anexado, todos disponíveis em `imagens/`. Se algum código foi usado para criar o dashboard ou sua base, o código será disponibilizado em `códigos/`.
 
 ---
 ## **Destaques do Curso**
@@ -255,3 +254,90 @@ flowchart LR
 3. Qual a variação da média do valor de fechamento (close) das ações de todas as empresas ao longo do tempo, mês a mês? Permita que essa análise seja feita para uma única empresa ou combinação de empresas.
 4. Use a Narrativa Inteligente para explicar as principais características e tendências nos dados.
 5. O Dashboard deve ser formatado.
+
+---
+### **lab5: Laboratório Prático 5 - Manipulação de Dados e Engenharia de Atributos com M Language**
+
+Neste laboratório, não houve desenvolvimento de dashboard. O principal objetivo foi a introdução à linguagem M para manipular dados.  
+O código desenvolvido é o `códigos/lab5.txt`.
+
+##### **Dados e Modelos de Dados**
+
+Como não há dashboard, será colocado nessa seção os dados iniciais e os dados após as mudanças promovidas por `códigos/lab5.txt`.
+
+Dados iniciais:
+| ID_Cliente | Idade | Peso | Altura | Estado Civil | Estado | Limite de Credito | Valor Desconto | Valor Compra | Tipo de Cliente |
+|---|---:|---:|---:|---|---|---:|---:|---:|---|
+| CCIW152 | ? | 65 | 173 | Solteiro | RS | 4362 | 16 | 3112 | Bronze |
+| LVSS431 | ? | 61 | 166 | Casado | RJ | 8773 | 28 | 892 | Ouro |
+| VUNL154 | 45 | 61 | 162 | Viúvo | RS | 6816 | 99 | 4201 | Prata |
+| JAKQ206 | 30 | 60 | 171 | Divorciado | SP | 1697 | 47 | 1780 | Bronze |
+| EPFC681 | 49 | 72 | 176 | Viúvo | RJ | 6231 | 77 | 2954 | Bronze |
+
+Dados finais:
+| Idade | Peso | Altura | Estado | Limite de Credito | Valor Desconto | Valor Compra | Tipo de Cliente | codigo | id | valor final | % desconto especial |
+|---:|---:|---:|---|---:|---:|---:|---|---|---:|---:|---:|
+| 45 | 65 | 173 | RS | 4 | 16 | 3112 | Bronze | CCIW | 152 | 3096 | 5 |
+| 45 | 61 | 162 | RS | 4 | 99 | 4201 | Prata | VUNL | 154 | 4102 | 10 |
+| 59 | 55 | 168 | RS | 4 | 56 | 2180 | Prata | VOJM | 695 | 2124 | 10 |
+| 36 | 58 | 171 | RS | 3 | 56 | 5415 | Bronze | LYXQ | 606 | 5359 | 5 |
+| 31 | 73 | 146 | RS | 4 | 58 | 3294 | Diamante | FKWK | 637 | 3236 | 20 |
+
+---
+### **lab7: Laboratório Prático 7 - Segmentação de Clientes para a Área de Marketing**
+
+<p align="center">
+<img src="imagens/lab7.png" width="600">
+</p>
+
+Foi desenvolvido um modelo de Machine Learning, presente no código `códigos/lab7.ipynb`.
+
+##### **Dados e Modelos de Dados**
+
+| id | idade | renda_anual | pontuacao_gastos | cluster |
+|---:|---:|---:|---:|---:|
+| 1 | 56 | 94740 | 90 | 2 |
+| 2 | 69 | 136352 | 50 | 0 |
+| 3 | 46 | 86617 | 62 | 0 |
+| 4 | 32 | 114841 | 97 | 0 |
+| 5 | 60 | 36896 | 51 | 2 |
+
+##### **Perguntas**
+
+Foi pedido a segmentação de clientes em 3 grupos.
+
+---
+### **lab8: Laboratório 8 - Detecção de Anomalias com Linguagem R e Power BI**
+
+<p align="center">
+<img src="imagens/lab8.png" width="600">
+</p>
+
+A versão final dos dados (presente no próximo tópico), bem como o modelo de Machine Learning, estão presentes no código `códigos/lab8.R`.
+
+##### **Dados e Modelos de Dados**
+
+| Column1 | id | average_depth | anomaly_score | status |
+|---:|---:|---:|---:|---|
+| 8 | 8 | 7.91 | 0,59 | normal |
+| 29 | 29 | 7.91 | 0,59 | normal |
+| 80 | 80 | 7.91 | 0,59 | normal |
+| 96 | 96 | 7.91 | 0,59 | normal |
+| 101 | 101 | 7.91 | 0,59 | normal |
+
+---
+### **lab9: Laboratório 9 - Prevendo a Produção Industrial ao Longo do Tempo**
+
+<p align="center">
+<img src="imagens/lab9.png" width="600">
+</p>
+
+##### **Dados e Modelos de Dados**
+
+| Período | Turno | Range Idade Funcionários | Total Unidades Produzidas |
+|---|---|---|---:|
+| segunda-feira, 1 de janeiro de 2018 | Manhã | 16 a 19 anos | 198987 |
+| segunda-feira, 1 de janeiro de 2018 | Manhã | 20 a 24 anos | 479800 |
+| segunda-feira, 1 de janeiro de 2018 | Manhã | 25 a 34 anos | 687123 |
+| segunda-feira, 1 de janeiro de 2018 | Manhã | 35 a 44 anos | 550902 |
+| segunda-feira, 1 de janeiro de 2018 | Manhã | 45 a 54 anos | 562791 |
